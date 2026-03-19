@@ -35,8 +35,8 @@ def get_model_mismatches(df_nmf, df_zero_shot, nmf_col='dominant_topic', zs_col=
         nmf_col: 'nmf_topic',
         zs_col: 'zero_shot_topic'
     })
+
     
-    # 4. Wybieramy kolumny do pokazania
     cols_to_show = ['abstract', 'nmf_topic', 'zero_shot_topic']
     if 'title' in merged_df.columns:
         cols_to_show.insert(0, 'title')
